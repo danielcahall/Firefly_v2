@@ -1,0 +1,1 @@
+"./FlashMemory.obj" "./I2C.obj" "./MPU6050.obj" "./main.obj" "./tempSensor.obj" "../lnk_msp430g2553.cmd" -l"libc.a" 
