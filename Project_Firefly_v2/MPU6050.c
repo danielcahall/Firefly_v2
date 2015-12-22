@@ -83,17 +83,17 @@ void getMPU6050(){
 	zAccel  = RX_Data[1] << 8;				// MSB
 	zAccel |= RX_Data[0];					// LSB
 }
-
+//get the z-acceleration values
 int getZAccel()
 {
 	return RX_Data[0];
 }
-
+//get the y-acceleration values
 int getYAccel()
 {
 	return RX_Data[2];
 }
-
+//get the x-acceleration values
 int getXAccel()
 {
 	return RX_Data[4];

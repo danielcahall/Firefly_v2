@@ -34,9 +34,6 @@ int main(void) {
     	{
     		//this is for writing temperature and acceleration to flash
     		//Although this can be modified to write pressure, etc.
-    		tempInit();//Initialize internal temperature sensor
-    		volatile int roomtemp;
-    		roomtemp = tempOut();						//set starting temperature
     		char *Flash_ptr = (char *)0xC200; 		//Flash pointer starting position - this is determined based on where your code ends in memory
     		write_flash(Flash_ptr);					//Call function to clear/write temp to flash
     	}
